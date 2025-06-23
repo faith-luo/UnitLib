@@ -2,6 +2,14 @@
 
 Thanks to Bjarne Stroustrop for his guidance. The idea for this initially came from his Design in C++ course at Columbia University. ([Final project slides](https://docs.google.com/presentation/d/1tSkXEHGuAYdIVbZiFPN07u9SzXgSZNK1FKTpWuo5bTg/edit?usp=sharing))
 
+## Quick Demo
+```
+using Meter = TypeAtomic<double, "meter">;
+using Second = TypeAtomic<double, "second">;
+auto m_p_s = Meter{1} / Second{1};
+static_assert( std_is_same_v<decltype(m_p_s), DivideType<Meter, Second>>);
+```
+
 ## Overview
 
 The overall goal of `UnitLib` is to allow compile-time typed arithmetic with arbitrary dimensional units in arbitrary rectangular shapes and arbitrary integral ratios. This means:
