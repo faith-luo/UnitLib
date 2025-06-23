@@ -1,5 +1,9 @@
 # UnitLib
 
+Thanks to Bjarne Stroustrop for his guidance. The idea for this initially came from his Design in C++ course at Columbia University. ([Final project slides](https://docs.google.com/presentation/d/1tSkXEHGuAYdIVbZiFPN07u9SzXgSZNK1FKTpWuo5bTg/edit?usp=sharing))
+
+## Overview
+
 The overall goal of `UnitLib` is to allow compile-time typed arithmetic with arbitrary dimensional units in arbitrary rectangular shapes and arbitrary integral ratios. This means:
 
 - Any possible units can be defined and used (as opposed to built-in SI units)
